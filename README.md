@@ -56,7 +56,6 @@ npm install brypt
 npm install jsonwebtoken
 npm install dotenv
 
-```
 ---
 ### 3. Configuration de l’environnement
 Créer un fichier `.env` à la racine :
