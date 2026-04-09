@@ -11,7 +11,7 @@ Ce projet consiste à développer une API REST avec Node.js et Express permettan
 * les listes de cadeaux
 L’API respecte les règles métier demandées (gestion du stock, validation des commentaires, sécurité des accès, etc.).
 
-## 👥 Membres et rôles
+##  Membres et rôles
 
   Djenabou Diallo
    Développement backend (routes, authentification,readaction du readme)
@@ -37,7 +37,7 @@ tp-api/
 
 ---
 
-## ⚙️ Installation et exécution
+## Installation et exécution
 
 ### 1. Cloner le projet
 
