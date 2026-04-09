@@ -35,7 +35,6 @@ tp-api/
 ├── server.js
 ├── package.json
 
----
 
 ## Installation et exécution
 
@@ -46,8 +45,6 @@ git clone https://github.com/djenabou555555/Deuxi-me-Partie-du-Project.git
 cd Deuxi-me-Partie-du-Project
 ```
 
----
-
 ### 2. Installer les dépendances
 
 npm install express
@@ -56,7 +53,6 @@ npm install brypt
 npm install jsonwebtoken
 npm install dotenv
 
----
 ### 3. Configuration de l’environnement
 Créer un fichier `.env` à la racine :
 
@@ -68,7 +64,6 @@ DB_USER=root
 DB_PASSWORD=
 DB_NAME=gourmand
 ```
----
 
 ### 4. Importer la base de données
 
@@ -76,20 +71,18 @@ DB_NAME=gourmand
 * Créer une base de données : `gourmand`
 * Importer le fichier `gourmand.sql`
 
----
 
 ### 5. Lancer le serveur
 
 ```bash id="9h6l3p"
 node server.js
-```
+
 Le serveur démarre sur :
 
 ```id="9f8r1y"
 http://localhost:7000
-```
 
----
+
 
 ## Authentification
 
@@ -100,15 +93,13 @@ http://localhost:7000
   "email": "test@gmail.com",
   "password": "123456"
 }
-```
+
 
 Retourne un token JWT à utiliser dans les routes protégées :
 
 ```id="c3q7fd"
 Authorization: Bearer TOKEN
-```
 
----
 
 ## Endpoints principaux
 
@@ -118,7 +109,6 @@ Authorization: Bearer TOKEN
 * PUT /api/users/:id
 * GET /api/users (admin)
 
----
 
 ###  Ouvrages
 
@@ -128,7 +118,6 @@ Authorization: Bearer TOKEN
 * PUT /api/ouvrages/:id
 * DELETE /api/ouvrages/:id
 
----
 
 ### Catégories
 
@@ -137,7 +126,6 @@ Authorization: Bearer TOKEN
 * PUT /api/categories/:id
 * DELETE /api/categories/:id
 
----
 
 ### Panier
 
@@ -146,7 +134,6 @@ Authorization: Bearer TOKEN
 * PUT /api/panier/items/:id
 * DELETE /api/panier/items/:id
 
----
 
 ### Commandes
 
@@ -155,7 +142,6 @@ Authorization: Bearer TOKEN
 * GET /api/commandes/:id
 * PUT /api/commandes/:id/status
 
----
 
 ### Listes de cadeaux
 
@@ -163,15 +149,12 @@ Authorization: Bearer TOKEN
 * GET /api/listes/:code
 * POST /api/listes/:id/acheter
 
----
-
 ###  Avis et commentaires
 
 * POST /api/ouvrages/:id/avis
 * POST /api/ouvrages/:id/commentaires
 * PUT /api/commentaires/:id/valider
 
----
 
 ##  Technologies utilisées
 
@@ -181,7 +164,6 @@ Authorization: Bearer TOKEN
 * JWT (authentification)
 * bcrypt (sécurité des mots de passe)
 
----
 
 ## Sécurité
 
@@ -199,8 +181,22 @@ Authorization: Bearer TOKEN
 * Les routes sensibles sont protégées
 * Les règles métier sont respectées (stock, avis après achat, validation des commentaires)
 * Le projet peut être amélioré avec une meilleure séparation (controllers/services)
+  ##  Historique des commits
 
----
+Le développement du projet a été réalisé de manière progressive avec plusieurs commits :
+
+* Initialisation du projet (structure, server, connexion base de données)
+* Ajout de l’authentification (register, login, JWT, bcrypt)
+* Implémentation de la gestion des utilisateurs (profil, mise à jour, admin)
+* Développement du CRUD des ouvrages et catégories
+* Implémentation du panier (ajout, affichage, modification, suppression)
+* Ajout de la gestion des commandes (création, historique, statut)
+* Implémentation des avis et commentaires
+* Ajout des listes de cadeaux
+* Intégration des règles métier (stock, validation, sécurité)
+* Ajout du README et du script SQL
+
+Chaque commit reflète une étape importante du développement afin de garantir une bonne organisation et traçabilité du projet.
 
 ## Conclusion
 
