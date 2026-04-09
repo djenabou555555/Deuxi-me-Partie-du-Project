@@ -19,7 +19,7 @@ L’API respecte les règles métier demandées (gestion du stock, validation de
 
 ## Structure du dépôt
 
-```id="m3f6v7"
+id="m3f6v7"
 tp-api/
 │
 ├── config/
@@ -34,16 +34,16 @@ tp-api/
 ├── .env
 ├── server.js
 ├── package.json
-
+schéma
+la base de données 
 
 ## Installation et exécution
 
 ### 1. Cloner le projet
 
-```bash id="9e0xhz"
+bash id="9e0xhz"
 git clone https://github.com/djenabou555555/Deuxi-me-Partie-du-Project.git
 cd Deuxi-me-Partie-du-Project
-```
 
 ### 2. Installer les dépendances
 
@@ -56,14 +56,13 @@ npm install dotenv
 ### 3. Configuration de l’environnement
 Créer un fichier `.env` à la racine :
 
-```env id="mczk8u"
+env id="mczk8u"
 PORT=7000
 JWT_SECRET=secret
 DB_HOST=localhost
 DB_USER=root
 DB_PASSWORD=
 DB_NAME=gourmand
-```
 
 ### 4. Importer la base de données
 
@@ -74,12 +73,12 @@ DB_NAME=gourmand
 
 ### 5. Lancer le serveur
 
-```bash id="9h6l3p"
+bash id="9h6l3p"
 node server.js
 
 Le serveur démarre sur :
 
-```id="9f8r1y"
+id="9f8r1y"
 http://localhost:7000
 
 
@@ -88,7 +87,7 @@ http://localhost:7000
 
 ### POST /api/auth/login
 
-```json id="0aw9tq"
+json id="0aw9tq"
 {
   "email": "test@gmail.com",
   "password": "123456"
@@ -97,7 +96,7 @@ http://localhost:7000
 
 Retourne un token JWT à utiliser dans les routes protégées :
 
-```id="c3q7fd"
+id="c3q7fd"
 Authorization: Bearer TOKEN
 
 
